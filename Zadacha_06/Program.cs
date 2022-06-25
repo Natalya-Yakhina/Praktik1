@@ -11,5 +11,5 @@ if (num % 2 == 0)
 }
 else
 {
-    Console.WriteLine($"число {num} - не четное");
+    Console.WriteLine($"число {num} - нечетное");
 }
