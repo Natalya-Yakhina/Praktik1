@@ -10,14 +10,6 @@ int num2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("введите третье число: ");
 int num3 = Convert.ToInt32(Console.ReadLine());
 
-int max = num1;
+int maxNum = Math.Max (Math.Max (num1, num2), num3);
 
-if (num2 > max)
-{
-    Console.WriteLine($"Максимальное число: " {num2});
-}
-else if (num3 > max)
-{
-    Console.WriteLine($"Максимальное число: " {num3});
-}
-Console.ReadKey();
+Console.WriteLine($"Максимальное число: {maxNum}");
