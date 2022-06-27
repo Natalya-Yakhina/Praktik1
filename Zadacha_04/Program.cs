@@ -9,7 +9,13 @@ Console.Write("введите второе число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("введите третье число: ");
 int num3 = Convert.ToInt32(Console.ReadLine());
+int max = num1;
+if (num2 > max) max = num2;
+if (num3 > max) max = num3;
 
-int maxNum = Math.Max (Math.Max (num1, num2), num3);
+Console.WriteLine($"Максимальное число: {max}");
 
-Console.WriteLine($"Максимальное число: {maxNum}");
+
+// int maxNum = Math.Max (Math.Max (num1, num2), num3); с использованием функции
+
+// Console.WriteLine($"Максимальное число: {maxNum}");
