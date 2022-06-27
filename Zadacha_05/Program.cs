@@ -10,4 +10,3 @@ for (m = -n; m <= n; m++)
 {
     Console.Write($"{m} ,", m);
 }
-
