@@ -8,27 +8,37 @@ Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 switch (num)
 {
-    case 1: Console.WriteLine("Понедельник"); break;
-    case 2: Console.WriteLine("Вторник"); break;
-    case 3: Console.WriteLine("Среда"); break;
-    case 4: Console.WriteLine("Четверг"); break;
-    case 5: Console.WriteLine("Пятница"); break;
-    case 6: Console.WriteLine("Суббота"); break;
-    case 7: Console.WriteLine("Воскресенье"); break;
+    case 1: Console.WriteLine("нет"); break;
+    case 2: Console.WriteLine("нет"); break;
+    case 3: Console.WriteLine("нет"); break;
+    case 4: Console.WriteLine("нет"); break;
+    case 5: Console.WriteLine("нет"); break;
+    case 6: Console.WriteLine("да"); break;
+    case 7: Console.WriteLine("да"); break;
     default: Console.WriteLine("Нет такого дня недели"); break;
 }
-if (num > 5 && num <= 7)
-{
-    Console.WriteLine("да, выходной");
-}
-else if (num <= 7)
-{
-    Console.WriteLine("нет");
-}
-
-// ((day >= 1 && day <=5 ) || (day >= 8 && day <=10))
 
 
 
+// если в кейс записать дни недели:
 
-
+// Console.Write("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// switch (num)
+// {
+//     case 1: Console.WriteLine("Понедельник"); break;
+//     case 2: Console.WriteLine("Вторник"); break;
+//     case 3: Console.WriteLine("Среда"); break;
+//     case 4: Console.WriteLine("Четверг"); break;
+//     case 5: Console.WriteLine("Пятница"); break;
+//     case 6: Console.WriteLine("Суббота"); break;
+//     case 7: Console.WriteLine("Воскресенье"); break;
+//     default: Console.WriteLine("Нет такого дня недели"); break;
+// if (num > 5 && num <= 7)
+// {
+//     Console.WriteLine("да");
+// }
+// else if (num <= 7)
+// {
+//     Console.WriteLine("нет");
+// }
