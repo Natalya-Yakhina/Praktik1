@@ -3,21 +3,17 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
+
 Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int num3 = 0;
+int digitIndex = 2; // индекс третьей цифры
 
-if (num < 1000)
+if (num > 99)
 {
-    num3 = (num % 10);
-    Console.WriteLine ($"Третья цифра числа {num} = {num3}");
+    int digit = num.ToString()[digitIndex] - '0';
+    Console.WriteLine($"Третья цифра числа {num} = {digit}");
 }
 else
 {
-    num3 = (num / 100 % 10);
-    Console.WriteLine ($"Третья цифра числа {num} = {num3}");
-}
-if (num < 100 )
-{
-    Console.WriteLine ($"Третьей цифры нет");
+    Console.WriteLine($"Третьей цифры нет");
 }
