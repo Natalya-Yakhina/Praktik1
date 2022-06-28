@@ -10,10 +10,10 @@ int digitIndex = 2; // индекс третьей цифры
 
 if (num > 99)
 {
-    int digit = num.ToString()[digitIndex] - '0';
+    int digit = num.ToString()[digitIndex]- '0';
     Console.WriteLine($"Третья цифра числа {num} = {digit}");
 }
 else
 {
-    Console.WriteLine($"Третьей цифры нет");
+    Console.WriteLine("Третьей цифры нет");
 }
