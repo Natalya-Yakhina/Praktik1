@@ -17,3 +17,33 @@ else
 {
     Console.WriteLine("Третьей цифры нет");
 }
+
+
+
+// Console.WriteLine("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int numNew = 0;
+
+// if (num > 100 && num < 999)  // от 100 до 999
+//     {
+//         numNew = (num % 10);
+//         Console.WriteLine($"Третья цифра числа {num} = {numNew}");
+//     }
+//     else
+// {
+//     Console.WriteLine("Третьей цифры нет");
+// }
+// if (num < 9999) 
+//     {
+//         numNew = (num / 10 % 10);
+//         Console.WriteLine ($"Третья цифра числа {num} = {numNew}"); 
+//     }
+// // if (num < 99999)
+// //     {
+// //         numNew = (num / 100 % 10);
+// //         Console.WriteLine ($"Третья цифра числа {num} = {numNew}");
+// //     }
+// else
+// {
+//     Console.WriteLine("Третьей цифры нет");
+// }

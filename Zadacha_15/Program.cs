@@ -3,7 +3,6 @@
 // 7 -> да
 // 1 -> нет
 
-
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 switch (num)
@@ -17,8 +16,6 @@ switch (num)
     case 7: Console.WriteLine("да"); break;
     default: Console.WriteLine("Нет такого дня недели"); break;
 }
-
-
 
 // если в кейс записать дни недели:
 
