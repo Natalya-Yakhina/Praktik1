@@ -9,7 +9,7 @@ int newNum3 = 0;
 if (n < 99)
     {
         Console.WriteLine("Третьей цифры нет");
-        return 0;
+        return;
     }
 while (n > 99) 
 {
@@ -17,7 +17,7 @@ while (n > 99)
     n = n / 10;
 }
     Console.WriteLine($"Третья цифра числа = {newNum3}");
-    return 0;
+    return;
 
 
 
