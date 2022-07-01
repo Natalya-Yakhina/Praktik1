@@ -7,70 +7,34 @@
 
 
 
+// Console.Clear();
+// Console.Write("Введите пятизначное число: ");
+// string? number = Console.ReadLine();
 
+// while (number!.Length == 5)
+// {
+//     if (number[0] == number[4] && number[1] == number[3])
+//     {
+//         Console.WriteLine($"Ваше число: {number} - палиндром.");
+//     }
+//     else
+//     {
+//         Console.WriteLine($"Ваше число: {number} - не палиндром.");
+//     }
+//     return;
+// }
+// if (number!.Length > 5)
+// {
+//     Console.WriteLine("ОШИБКА!!!");
+// }
+
+Console.Clear();
 Console.Write("Введите пятизначное число: ");
-string? number = Console.ReadLine();
+int n = int.Parse(Console.ReadLine());
 
-
-while(number!.Length == 5)
+for(int i = 0; i < n; i--)
 {
-  if (number[0] == number[4] && number[1] == number[3])
-  {
-      Console.WriteLine($"Ваше число: {number} - палиндром.");
-  }
-  else
-  {
-      Console.WriteLine($"Ваше число: {number} - не палиндром.");
-  }
+  Console.WriteLine($"{i}");
   return;
 }
 
-
-// void NewNumber(string number)
-// {
-//   if (number[0]==number[4] || number[1]==number[3])
-//   {
-//     Console.WriteLine($"Ваше число: {number} - палиндром.");
-//   }
-//   else 
-//   {
-//     Console.WriteLine($"Ваше число: {number} - НЕ палиндром.");
-//   }
-// }
-// if(number!.Length == 5)
-// {
-//   NewNumber(number);
-// }
-
-// if (number!.Length == 5)
-// {
-//   NewNumber(number);
-// }
-// else Console.NewNumber($"ОШИБКА!");
-
-
-
-// int num = Convert.ToInt32(Console.ReadLine());
-//int numNew = 0;
-
-// while (num > 0)
-// {
-//     numNew = num / 10;
-//     numNew = numNew * 10 + numNew;
-//     num = num / 10;
-// }
-// if (num == numNew)
-// {
-//     Console.WriteLine("палиндромом");
-// }
-// else
-// {
-//     Console.WriteLine("не палиндромом");
-// }
-
-
-// for (int i = Array.Length - 1; i >= 0; i--)
-//     {
-//         return;
-//         Console.WriteLine($"NumNew = {i}");
-//     }
