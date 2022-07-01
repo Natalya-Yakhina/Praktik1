@@ -7,34 +7,22 @@
 
 
 
-// Console.Clear();
-// Console.Write("Введите пятизначное число: ");
-// string? number = Console.ReadLine();
-
-// while (number!.Length == 5)
-// {
-//     if (number[0] == number[4] && number[1] == number[3])
-//     {
-//         Console.WriteLine($"Ваше число: {number} - палиндром.");
-//     }
-//     else
-//     {
-//         Console.WriteLine($"Ваше число: {number} - не палиндром.");
-//     }
-//     return;
-// }
-// if (number!.Length > 5)
-// {
-//     Console.WriteLine("ОШИБКА!!!");
-// }
-
 Console.Clear();
 Console.Write("Введите пятизначное число: ");
-int n = int.Parse(Console.ReadLine());
-
-for(int i = 0; i < n; i--)
+string? number = Console.ReadLine();
+while (number!.Length == 5)
 {
-  Console.WriteLine($"{i}");
-  return;
+    if (number[0] == number[4] && number[1] == number[3])
+    {
+        Console.WriteLine($"Ваше число: {number} - палиндром.");
+    }
+    else
+    {
+        Console.WriteLine($"Ваше число: {number} - не палиндром.");
+    }
+    return;
 }
-
+if (number!.Length > 5)
+{
+    Console.WriteLine("ОШИБКА!!!");
+}
