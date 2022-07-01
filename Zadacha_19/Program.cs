@@ -9,7 +9,7 @@
 
 Console.Clear();
 Console.Write("Введите пятизначное число: ");
-string? number = Console.ReadLine();
+string number = Console.ReadLine();
 while (number!.Length == 5)
 {
     if (number[0] == number[4] && number[1] == number[3])
@@ -22,7 +22,8 @@ while (number!.Length == 5)
     }
     return;
 }
-if (number!.Length > 5)
-{
-    Console.WriteLine("ОШИБКА!!!");
-}
+
+// if (number!.Length > 5)
+// {
+//     Console.WriteLine("ОШИБКА!!!");
+// }
