@@ -6,19 +6,19 @@ Console.Clear();
 Console.WriteLine("Введите координаты точки: ");
 
 Console.Write("ХА = ");
-int XA = Convert.ToInt32(Console.ReadLine());
+int xa = Convert.ToInt32(Console.ReadLine());
 Console.Write("YA = ");
-int YA = Convert.ToInt32(Console.ReadLine());
+int ya = Convert.ToInt32(Console.ReadLine());
 Console.Write("ZA = ");
-int ZA = Convert.ToInt32(Console.ReadLine());
+int za = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("XB = ");
-int XB = Convert.ToInt32(Console.ReadLine());
+int xb = Convert.ToInt32(Console.ReadLine());
 Console.Write("YB = ");
-int YB = Convert.ToInt32(Console.ReadLine());
+int yb = Convert.ToInt32(Console.ReadLine());
 Console.Write("ZB = ");
-int ZB = Convert.ToInt32(Console.ReadLine());
+int zb = Convert.ToInt32(Console.ReadLine());
 
 
-double AB = Math.Sqrt(Math.Pow((XA - XB),2) + Math.Pow((YA - YB),2) + Math.Pow((ZA-ZB), 2));
+double AB = Math.Sqrt(Math.Pow((xa - xb),2) + Math.Pow((ya - yb),2) + Math.Pow((za-zb), 2));
 Console.WriteLine(Math.Round(AB, 2));
