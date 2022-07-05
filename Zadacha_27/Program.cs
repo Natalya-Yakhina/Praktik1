@@ -12,5 +12,6 @@ int Sum(int number)
     }
     return sum;
 }
+
 int sum = Sum(num);
 Console.WriteLine($"Сумма цифр в числе {num} = " + sum);
