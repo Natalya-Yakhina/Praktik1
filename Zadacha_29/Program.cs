@@ -3,39 +3,38 @@
 // 1, 2, 5, 7, 19, 6, 1, 33 -> [1, 2, 5, 7, 19, 6, 1, 33]
 
 
-// int[] array = new int[8];
-// void RandomArray(int[] array)
-// {
-//     Random rand = new Random();
-//     Console.Write("[");
-//     for(int i = 0; i < array.Length; i++)
-//     {
-//         array[i] = rand.Next(0, 33); // ограничение для вывода не больших чисел = 33 (по макс из условий)
-//         Console.Write(array[i] + ",");
-//     }
-//         Console.Write("]");
-// }
-// int[] arrayNew = new int[8];
-// RandomArray(array);
+int[] array = new int[8]; // задаем массив из 8 эменентов
+void RandomArray(int[] array)
+{
+    Random rand = new Random();
+    Console.Write("[");
+    for(int i = 0; i < array.Length; i++)
+    {
+        array[i] = rand.Next(0, 33); // ограничение для вывода не больших чисел = 33 (по макс из условия)
+        Console.Write(array[i] + ",");
+    }
+        Console.Write("]");
+}
+int[] arrayNew = new int[8];
+RandomArray(array);
 
 
 
-// ввод элементов массива
+// ====== вывод массива на экран с ручным вводом элементов =======
 
-Console.WriteLine("Введите кол-во эл. массива");
-int num = int.Parse(Console.ReadLine()); // ввод числа
-int[] array = new int[num]; // ввод массива из числа
+
+int[] array = new int[8]; // задаем массив из 8 эменентов
 
 for(int i = 0; i < array.Length; i++)
 {
-    Console.Write($"Введите элемент массива под индексом {i}:\t ");
+    Console.Write($"Введите элемент массива под индексом {i}: ");
     array[i] = int.Parse(Console.ReadLine());
 }
 
-Console.WriteLine("Вывод массива: ");
+Console.Write("Вывод массива: [");
 
-for(int i = 0; i < myArray.Length; i++)
+for(int i = 0; i < array.Length; i++)
 {
-    Console.WriteLine(myArray[i]);
+    Console.Write(array[i]+ ",");
 }
-Console.ReadLine();
+Console.Write("]");
