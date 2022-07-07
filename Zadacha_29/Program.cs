@@ -6,6 +6,7 @@
 // ====== разделение функционала ======
 
 int[] array = new int[8]; // задаем массив из 8 эменентов
+Random rand = new Random();
 
 void FillArray(int[] collection)
 {
@@ -13,14 +14,13 @@ void FillArray(int[] collection)
     int index = 0;
     while(index < length)
     {
-        collection[index] = new Random().Next(1, 10); // положить новое число из диапозона
+        collection[index] = new Random().Next(1, 33); // положить новое число из диапозона, 33 макс из условия
         index++;
     }
 }
 
 void PrintArray(int[] col)
 {
-    Random rand = new Random();
     Console.Write("[");
     int count = col.Length;
     int position = 0;
@@ -33,6 +33,7 @@ void PrintArray(int[] col)
 }
 FillArray(array);
 PrintArray(array);
+
 
 
 // ====== вывод массива (с авто заполнением элементов) ======
