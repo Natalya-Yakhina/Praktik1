@@ -3,10 +3,11 @@
 // 1, 2, 5, 7, 19, 6, 1, 33 -> [1, 2, 5, 7, 19, 6, 1, 33]
 
 
-// ====== разделение функционала ======
 
 int[] array = new int[8]; // задаем массив из 8 эменентов
 Random rand = new Random();
+
+// ===== получение массива =====
 
 void FillArray(int[] collection)
 {
@@ -18,6 +19,8 @@ void FillArray(int[] collection)
         index++;
     }
 }
+
+// ===== вывод массива =====
 
 void PrintArray(int[] col)
 {
