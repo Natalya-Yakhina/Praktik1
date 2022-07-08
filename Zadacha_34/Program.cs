@@ -3,6 +3,7 @@
 
 // [345, 897, 568, 234] -> 2
 
+Console.Clear();
 int[] array = new int[4];
 
 void FillArray(int[] arr)
