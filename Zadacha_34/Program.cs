@@ -38,6 +38,5 @@ void NumberOfEven(int[] arr) // метод для подсчета количе�
 }
 
 int[] array = FillArray(5, -99, 99);
-// FillArray(array);
 PrintArray(array);
 NumberOfEven(array);

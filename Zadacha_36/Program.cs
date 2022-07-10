@@ -5,20 +5,21 @@
 // [-4, -6, 89, 6] -> 0
 
 Console.Clear();
-int[] array = new int[7];
-
-void FillArray(int[] arr)
+int[] FillArray(int size, int min, int max)
 {
+    int[] arr = new int[size];
     Random rnd = new Random();
-    for (int i = 0; i < arr.Length; i++)
+
+    for (int i = 0; i < size; i++)
     {
-        arr[i] = rnd.Next(-10, 90);
+        arr[i] = rnd.Next(min, max+1);
     }
+    return arr;
 }
 
 void PrintArray(int[] arr)
 {
-    for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
         if (i == 0) Console.Write("[");
         if (i < arr.Length - 1) Console.Write(arr[i] + ", ");
@@ -37,7 +38,7 @@ int SumNeChet(int[] arr) // метод вычисления суммы знач�
     return sum;
 }
 
-FillArray(array);
+int[] array = FillArray(6, -15, 15);
 PrintArray(array);
 
 int sumNeChet = SumNeChet(array);

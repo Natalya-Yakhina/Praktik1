@@ -11,8 +11,6 @@ double[] FillArray(int size, int min, int max)
 
     for (int i = 0; i < size; i++)
     {
-        // array[i] = Math.Round((rnd.NextDouble() * (max-min)+min), 2); 
-        // rnd.Next(min, max) + rnd.NextDouble();
         array[i] = Math.Round(rnd.Next(min, max) + rnd.NextDouble(), 2);// Math.Round - метод обрезки числа после запятой (переменная, индекс)
     }
     return array;
@@ -26,7 +24,6 @@ double FindMaxElement(double[] array)
         if (array[i] > array[maxNum])  maxNum = i;
     }
     return array[maxNum];
-    //return maxNum;
 }
 //3. Поиск минимального элемента массива
 double FindMinElement(double[] array)
@@ -37,7 +34,6 @@ double FindMinElement(double[] array)
         if (array[i] < array[minNum])  minNum = i;
     }
     return array[minNum];
-    //return minNum;
 }
 // 4. Вывод массива
 void PrintArray(double[] array)
