@@ -4,15 +4,16 @@
 // [345, 897, 568, 234] -> 2
 
 Console.Clear();
-int[] array = new int[4];
-
-void FillArray(int[] arr)
+int[] FillArray(int size, int min, int max)
 {
+    int[] array = new int[size];
     Random rnd = new Random();
-    for (int i = 0; i < arr.Length; i++)
+
+    for (int i = 0; i < size; i++)
     {
-        array[i] = rnd.Next(100, 1000);
+        array[i] = rnd.Next(min, max+1);
     }
+    return array;
 }
 
 void PrintArray(int[] arr) 
@@ -36,6 +37,7 @@ void NumberOfEven(int[] arr) // метод для подсчета количе�
     Console.WriteLine($"Количество четных чисел в массиве -> {count}");
 }
 
-FillArray(array);
+int[] array = FillArray(5, -99, 99);
+// FillArray(array);
 PrintArray(array);
 NumberOfEven(array);
