@@ -5,7 +5,7 @@
 // [-4, -6, 89, 6] -> 0
 
 Console.Clear();
-int[] FillArray(int size, int min, int max)
+int[] CreateArrayRnd(int size, int min, int max)
 {
     int[] arr = new int[size];
     Random rnd = new Random();
@@ -38,7 +38,7 @@ int SumNeChet(int[] arr) // метод вычисления суммы знач�
     return sum;
 }
 
-int[] array = FillArray(6, -15, 15);
+int[] array = CreateArrayRnd(6, -15, 15);
 PrintArray(array);
 
 int sumNeChet = SumNeChet(array);

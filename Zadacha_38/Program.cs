@@ -4,7 +4,7 @@
 
 Console.Clear();
 // 1. Создание массива вещественных чисел
-double[] FillArray(int size, int min, int max)
+double[] CreateArrayRnd(int size, int min, int max)
 {
     double[] array = new double[size];
     Random rnd = new Random();
@@ -47,7 +47,7 @@ void PrintArray(double[] array)
     Console.WriteLine();
 }
 
-double[] array = FillArray(5, 0, 99);
+double[] array = CreateArrayRnd(5, 0, 99);
 PrintArray(array);
 
 FindMaxElement(array); 
