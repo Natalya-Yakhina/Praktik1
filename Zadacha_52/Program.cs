@@ -38,17 +38,19 @@ void PrintMatrix(int[,] arr)
 
 void ArithmeticMeanArray(int[,] arr)
 {
+    
     for (int i = 0; i < arr.GetLength(1); i++)
     {
         double sumG = 0;
         for(int j = 0; j < arr.GetLength(0); j++)
         {
-            sumG = sumG + arr[j, i];
+            sumG = sumG + arr[j, i]; // сумма элементов строки
         }
-        sumG = sumG / arr.GetLength(0); 
+        sumG = sumG / arr.GetLength(0);
         Console.WriteLine($"Среднее арифметическое столбца №{i+1} = {Math.Round(sumG, 1)}"); // сокращение
     }
 }
+
 int[,] arrayResult = CreateMatrixRndInt(3, 4, 0, 10);
 PrintMatrix(arrayResult);
 ArithmeticMeanArray(arrayResult);

@@ -44,8 +44,8 @@ void PrintMatrix(int[,] arr)
 void FindElementArray(int[,] arr) // поиск элемента по заданным позициям строки и столбца
 {
     int i = numLine - 1;
-    int j = numColumn - 1;
-    if (i < arr.GetLength(0) && j < arr.GetLength(1)) 
+    int j = numColumn -1;
+    if ((i < arr.GetLength(0) && i > 0) && (j < arr.GetLength(1) && j > 0)) 
     {
         Console.WriteLine($"Указанный элемент имеет значение: {arr[i, j]}"); 
     }
