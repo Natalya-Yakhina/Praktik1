@@ -8,7 +8,7 @@
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
 
-int[,,] RandomArray(int x, int y, int z)
+int[,,] CreateArray(int x, int y, int z)
 {
     int[,,] array = new int[x, y, z];
     int number = 10; // вывод элементов массива без рандома
@@ -45,5 +45,6 @@ void PrintArray(int[,,] arr)
         }
     }
 }
-int[,,] array = RandomArray(2, 2, 2);
+
+int[,,] array = CreateArray(2, 2, 2);
 PrintArray(array);
