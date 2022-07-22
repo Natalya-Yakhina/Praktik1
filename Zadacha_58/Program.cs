@@ -42,7 +42,7 @@ int[,] MultiplicationMatrix(int[,] matrixA, int[,] matrixB) // метод про
     {
         for (int j = 0; j < matrixB.GetLength(1); j++)
         {
-            for(int k = 0; k < matrixB.GetLength(1); k++)
+            for(int k = 0; k < matrixB.GetLength(0); k++)
             {
                 matrixC[i, j] =  matrixC[i, j] + matrixA[i, k] * matrixB[k, j];
             }
